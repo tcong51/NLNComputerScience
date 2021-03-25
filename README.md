@@ -1,1 +1,2 @@
-# NLNComputerScience
+# NienLuanCS
+# XEM TRONG YEUCAU CÁC MỤC CHƯA LÀM 
