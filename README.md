@@ -1,2 +1,1 @@
-# NienLuanCS
-# XEM TRONG YEUCAU CÁC MỤC CHƯA LÀM 
+# Niên luận ngành KHMT
