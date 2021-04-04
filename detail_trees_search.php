@@ -15,7 +15,7 @@
 <meta charset="utf8">
 </head>
 <link href="css/detail_trees.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="testindex.css">
+<link rel="stylesheet" href="css/testindex.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
        <script>

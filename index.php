@@ -118,7 +118,7 @@ function signup(){
                     $key = 'Species';
                     echo "<form action= method=GET>";
                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
-                    echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Species']."</a>";
+                    echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Species']."</a>";
                    }
                    echo "</form>";
                 ?>
@@ -137,7 +137,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Landtype']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Landtype']."</a>";
                         
                     }
                     echo "</form>";
@@ -154,7 +154,7 @@ function signup(){
                         $key = 'Area';
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Area']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Area']."</a>";
                     }
                     echo "</form>";
                     ?>
@@ -172,7 +172,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Light']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Light']."</a>";
                         
                     }
                     echo "</form>";
@@ -191,7 +191,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Humidity']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Humidity']."</a>";
                         
                     }
                     echo "</form>";
@@ -210,7 +210,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Benefit']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Benefit']."</a>";
                         
                     }
                     echo "</form>";
@@ -229,7 +229,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Climate']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Climate']."</a>";
                         
                     }
                     echo "</form>";
@@ -248,7 +248,7 @@ function signup(){
                         echo "<form action= method=GET>";
                     foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Growthtime']."</a>";
+                        echo "<a href =treesOfButton.php?id=".$value['Code']."&key=$key>".$value['Growthtime']."</a>";
                         
                     }
                     echo "</form>";

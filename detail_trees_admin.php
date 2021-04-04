@@ -20,7 +20,7 @@
     #link{text-align:center;}
     </style>
 <link href="css/detail_trees.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="detail_trees.css">
+<link rel="stylesheet" href="detail.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
        <script>
@@ -70,7 +70,7 @@
         <div id="menu">
             <div class="topnav">
                 <a class="active" href="pageadmin.php">Admin page</a>
-                <?php
+ <!--               <#?php
                     include "connect.php";
                     echo "<form action= method=GET>";
                    foreach($sql = $con->query("SELECT DISTINCT Species,Types FROM db_trees") as $value){
@@ -79,8 +79,8 @@
                     
                    }
                    echo "</form>";
-                ?>
-                <div class="search-container">
+                ?>--> 
+               <div class="search-container">
                 <form action="search_page_admin.php" method ="GET" onsubmit="return signup()">
                     <input type="text" placeholder="Tìm kiếm.." name="search" >
                     <button type="submit"><i class="fa fa-search"></i></i></button>

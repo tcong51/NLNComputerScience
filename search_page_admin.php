@@ -92,12 +92,12 @@
         <div id="header"></div>
         <div id="menu">
             <div class="topnav">
-                <a class="active" href="index.php">Trang chủ</a>
-                <a href="ds_trees_l1_homepage.php">Cây ăn quả</a>
+                 <a class="active" href="index.php">Trang chủ</a> 
+                <!-- <a href="ds_trees_l1_homepage.php">Cây ăn quả</a> 
                 <a href="ds_trees_l2_homepage.php">Cây kiểng</a>
                 <a href="ds_trees_l3_homepage.php">Cây dây leo</a>
                 <a href="ds_trees_l4_homepage.php">Cây thân gỗ</a>
-                <a href="ds_trees_l5_homepage.php">Cây thảo dược</a>
+                <a href="ds_trees_l5_homepage.php">Cây thảo dược</a> -->
                 <div class="search-container">
                     <form action="search_page_admin.php" method ="GET" onsubmit="return signup()">
                     	<input type="text" placeholder="Tìm kiếm.." id="search" name="search" >
