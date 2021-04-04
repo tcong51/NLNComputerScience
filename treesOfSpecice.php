@@ -1,43 +1,17 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-
 <meta charset="utf8">
 </head>
+<title>TRA CỨU THÔNG TIN CÂY TRỒNG</title>
 <style>
     #link{text-align:center;}
     </style>
-<link href="css/detail_trees.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="detail_trees.css">
+<!-- <link href="css/ds_trees.css" rel="stylesheet" type="text/css" /> -->
+<link rel="stylesheet" href="homepage.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
        <script>
-	// var IMAGE_PATHS = [];
-	// IMAGE_PATHS[0] = "./hinhanh/banner.jpg";
-	// IMAGE_PATHS[1] = "./hinhanh/banner2.jpg";
-	// IMAGE_PATHS[2] = "./hinhanh/banner3.png";
-	
-	
-	
-	// let index = 0;
-	// let intervalTimer;
-	
-	// function slideShow(){
-	// 	index++;
-	// 	if(index > IMAGE_PATHS.length - 1) index = 0;
-		
-	// 	let Img = document.getElementById("Img");
-	// 	Img.setAttribute("src", IMAGE_PATHS[index]);
-		
-	// }
-	
-	// function activateTimer(){
-	// 	intervalTimer = setInterval(slideShow, 3000);
-	// }
-	
-	// activateTimer();
-	
     const showResult=(value)=>{
    // document.getElementById("keyup").innerHTML = value;
                 if (value.length==0) {
@@ -127,6 +101,7 @@
 }
 </style>
 <body>
+
 <div id="wrapper">
         <div id="header"></div>
         <div id="menu">
@@ -262,7 +237,6 @@
             <div class="dropdown">
             <button class="dropbtn">Thời gian sinh trưởng</button>
             <div class="dropdown-content">
-
                     <?php
                         include "connect.php";
                         echo "<form action= method=GET>";
@@ -275,27 +249,18 @@
                     ?>
             </div>
             </div>
-            <!-- DropList of Growthtime --> 
-            
+            <!-- DropList of Growthtime -->  
             </ul>
-
-            
-            
-            
                 <div class="search-container">
                 <form action="search_page.php" method ="GET" onsubmit="return signup()">
                     <input type="text" placeholder="Tìm kiếm.." id="search" name="search" onkeyup="showResult(this.value)">
                     <button type="submit"><i class="fa fa-search"></i></i></button>
-                     
                      </form>
                      <div id="show" onclick="showss(this.value)"></div> 
                 </div>
             </div>
-
     </div>
-    </br>
-    </br>
-      <!-- QUANG CAO -->
+    <!-- QUANG CAO -->
 <div class="adfloat" id="divBannerFloatLeft">
  <p><a href="http://hocwebgiare.com/" target="_blank"><img src="http://hocwebgiare.com/images/left_banner.png" alt=""></a>
  </p>
@@ -305,63 +270,53 @@
  </p>
 </div>
 <!-- -->
-<div id="hienthi-caytrong">
-<?php 
-$Code=$_GET['id'];
-//  echo $Code;
-include "connect.php";
-
-$data = $con->query("SELECT * FROM db_trees WHERE Code='$Code'");
-$data = $data->fetch_assoc();
-	echo '<center>'.'<table frame="border" border=4 >'.'</center>';
-    $data = $con->query("SELECT * FROM db_trees WHERE Code='$Code'");
-    $data = $data->fetch_assoc();
- echo "<form action= method=GET>";
-	echo '<table frame="border" border=4  >';
-
-	echo "<tr id='h1'> <td><h1>".$data['TreeName']."</h1></td></tr>";
-    echo "<tr id='tr'>
-       <td> <h2>Đặc điểm</h2></td>
-        </tr>";
-    echo "<tr id='tr'>
-        <td id='td'>".$data['Characteristics']."</td>
-        </tr>";
-    echo "<tr id='tr'>
-        <td id='td'><center><img src='".$data['Avatar']."'></center></td>
-        </tr>";	
-    echo "<tr id='tr'>
-        <td> <h2>Cách chăm sóc</h2></td>
-         </tr>";   
-    echo "<tr id='tr'>
-        <td id='td'>".$data['HowToCare']."</td>
-        </tr>";	
-    echo "<tr id='tr'>
-        <td> <h2>Tổng kết</h2></td>
-         </tr>";
-    echo "<tr id='tr'>
-        <td id='td'>".$data['Describe']."</td>
-        </tr>";
-          
+    <div id="ten-content">
+        <h2><center>DANH SÁCH CÂY <?php
+            include "connect.php"; 
+            $id =$_GET['id'];
+            $key = $_GET['key'];
+            $arrayNameTrees = array('area', 'benefit', 'climate', 'humidity', 'growthtime', 'species', 'landtype', 'light');
+            $arrayReturnName = array('Khu vực', 'Công dụng', 'Khí hậu', 'Độ ẩm', 'Thời gian sinh trưởng', 'Loại cây', 'Độ sáng');
+            $len = count($arrayNameTrees);
+            
+            for ($i = 0; $i < $len; $i++){
+              if($key == $arrayNameTrees[$i])
+                echo mb_strtoupper($arrayReturnName[$i], 'UTF-8');
+                echo "\n";
+              
+            }
+						
+						
+						$sql = $con->query("SELECT DISTINCT * FROM $key WHERE Code='$id'");
+						$sql = $sql->fetch_assoc();
+						$str = mb_strtoupper($sql[$key],'UTF-8');
+						echo $str;
+						$con->close();?></center></h2>
+    </div>
+    <div id="content">
+    <?php
     
+    $id =$_GET['id'];
+    $key = $_GET['key'];    
+    include "connect.php";  
+
+    echo "<table >" ;
+
+    foreach ($sql = $con->query("SELECT DISTINCT * FROM db_trees WHERE $key='$id' ") as $value){
+        echo "<tr id='tr'>
+        
+        <td id='link' ><img src='".$value['Avatar']."'></td>
+        <td style='width:700px'><h3>".$value['TreeName']."</h3></br> ".$value['Characteristics']."...<a href =detail_trees.php?id=".$value['Code']."> [Xem chi tiết]</a></td>
+        </tr>";
+        echo '</br>';
+        }
+      echo "</table>";
     
-	echo "</table>";
-    echo "</form>";
-
-
-    // $data = $con->query("SELECT * FROM db_trees WHERE Code='$Code'");
-    // $data = $data->fetch_assoc();
-    // echo "<form action= method=GET>";
-	//     echo '<table frame="border" border=4  >';
-	//     echo "</table>";
-    //     echo "</form>";
-    $luot=$data['NumberAccess'];
-    $luot=$luot+1;
-    $sql = $con->query("UPDATE db_trees SET NumberAccess='$luot' WHERE Code ='$Code'");
-$con->close();
-
-?>
+      
+    $con->close();
+    ?>
+</div>
 <div id="footer">
     </div>
-</div>
 </body>
 </html>

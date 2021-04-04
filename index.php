@@ -109,46 +109,154 @@ function signup(){
             <div class="topnav">
             <a class="active" href="index.php">Trang chủ</a>
             <ul id = "drnav">
+            <!-- DropList of Species -->
             <div class="dropdown">
-              
-            <button class="dropbtn">Danh Mục</button>
+            <button class="dropbtn">Loại cây</button>
             <div class="dropdown-content">
-
                 <?php
                     include "connect.php";
+                    $key = 'Species';
                     echo "<form action= method=GET>";
-                   foreach($sql = $con->query("SELECT DISTINCT * FROM species") as $value){
-                    
-                    echo "<a href =ds_trees_homepage.php?id=".$value['Code'].">".$value['Species']."</a>";
-                    
+                   foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                    echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Species']."</a>";
                    }
                    echo "</form>";
                 ?>
-                </div>
+              </div>
             </div>
-
+            
+            <!-- DropList of Species -->
+            <!-- DropList of Landtype -->
             <div class="dropdown">
             <button class="dropbtn">Đất Trồng</button>
             <div class="dropdown-content">
 
                     <?php
                         include "connect.php";
+                        $key = 'Landtype';
                         echo "<form action= method=GET>";
-                    foreach($sql = $con->query("SELECT DISTINCT * FROM landtype") as $value){
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
                         
-                        echo "<a href =ds_trees_land.php?id=".$value['Code'].">".$value['LandName']."</a>";
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Landtype']."</a>";
                         
                     }
                     echo "</form>";
                     ?>
-</div>
             </div>
-            
-            </ul>
+            </div>
+            <!-- DropList of Landtype -->
+            <!-- DropList of Area -->
+            <div class="dropdown">
+            <button class="dropbtn">Khu vực</button>
+            <div class="dropdown-content">
+                    <?php
+                        include "connect.php";
+                        $key = 'Area';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Area']."</a>";
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div> 
+            <!-- DropList of Area -->
+            <!-- DropList of Light -->
+            <div class="dropdown">
+            <button class="dropbtn">Độ sáng</button>
+            <div class="dropdown-content">
 
-            
-            
-            
+                    <?php
+                        include "connect.php";
+                        $key = 'Light';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Light']."</a>";
+                        
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div>
+            <!-- DropList of Light --> 
+            <!-- DropList of Humidity -->
+            <div class="dropdown">
+            <button class="dropbtn">Độ ẩm</button>
+            <div class="dropdown-content">
+
+                    <?php
+                        include "connect.php";
+                        $key = 'Humidity';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Humidity']."</a>";
+                        
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div>
+            <!-- DropList of Humidity -->
+            <!-- DropList of Benefit -->
+            <div class="dropdown">
+            <button class="dropbtn">Công dụng</button>
+            <div class="dropdown-content">
+
+                    <?php
+                        include "connect.php";
+                        $key = 'Benefit';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Benefit']."</a>";
+                        
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div>
+            <!-- DropList of Benefit -->
+            <!-- DropList of Climate -->
+            <div class="dropdown">
+            <button class="dropbtn">Khí hậu</button>
+            <div class="dropdown-content">
+
+                    <?php
+                        include "connect.php";
+                        $key = 'Climate';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Climate']."</a>";
+                        
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div>
+            <!-- DropList of Climate -->
+            <!-- DropList of Growthtime -->
+            <div class="dropdown">
+            <button class="dropbtn">Thời gian sinh trưởng</button>
+            <div class="dropdown-content">
+
+                    <?php
+                        include "connect.php";
+                        $key = 'Growthtime';
+                        echo "<form action= method=GET>";
+                    foreach($sql = $con->query("SELECT DISTINCT * FROM $key") as $value){
+                        
+                        echo "<a href =treesOfSpecice.php?id=".$value['Code']."&key=$key>".$value['Growthtime']."</a>";
+                        
+                    }
+                    echo "</form>";
+                    ?>
+            </div>
+            </div>
+            <!-- DropList of Growthtime --> 
+            </ul>
                 <div class="search-container">
                 <form action="search_page.php" method ="GET" onsubmit="return signup()">
                     <input type="text" placeholder="Tìm kiếm.." id="search" name="search" onkeyup="showResult(this.value)">

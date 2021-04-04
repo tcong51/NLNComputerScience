@@ -142,7 +142,7 @@
                     echo "<form action= method=GET>";
                    foreach($sql = $con->query("SELECT DISTINCT Species,Types FROM db_trees") as $value){
                     
-                    echo "<a href =ds_trees_homepage.php?id=".$value['Types'].">".$value['Species']."</a>";
+                    echo "<a href =treesOfSpecice.php?id=".$value['Types'].">".$value['Species']."</a>";
                     
                    }
                    echo "</form>";
