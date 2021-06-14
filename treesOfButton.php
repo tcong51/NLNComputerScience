@@ -76,8 +76,8 @@
   display: none;
   position: absolute;
   background-color: 	#b0c4de;
-/* min-width : tùy thuộc vào bao nhiêu loại cây, chưa fix hoàn chỉnh. */
-  min-width: 462px ;
+
+  min-width: max-content ;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -323,5 +323,25 @@
 </div>
 <div id="footer">
     </div>
+<!--Chat bot -->
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "./js/index.js"),
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+<!--         -->
 </body>
 </html>

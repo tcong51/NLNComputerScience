@@ -1,0 +1,178 @@
+[
+  {
+    "text": "Kỹ thuật trồng cây bưởi năm roi là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 31,
+        "value": "bưởi năm roi",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.7927517294883728,
+        "value": "cây",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 31,
+        "confidence_entity": 0.5250348448753357,
+        "value": "bưởi năm roi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cây Sala là cây gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Cây Sala",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.5058267116546631,
+        "value": "Sala",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại kiểng",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "kiểng",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "humidity",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.37406447529792786,
+        "value": "kiểng",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại ăn quả",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "ăn quả",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionfirst",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9700056910514832,
+        "value": "ăn quả",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây cam sành là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "cam sành",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nametree",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.66,
+        "value": "cam sành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng dùng để cải tạo đất",
+    "entities": [
+      {
+        "start": 22,
+        "end": 33,
+        "value": "cải tạo đất",
+        "entity": "benefit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionfirst",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.5701956748962402,
+        "value": "cải tạo đất",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng dùng để cố định đất ven sông",
+    "entities": [
+      {
+        "start": 22,
+        "end": 42,
+        "value": "cố định đất ven sông",
+        "entity": "benefit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionfirst",
+        "start": 22,
+        "end": 42,
+        "confidence_entity": 0.3906492292881012,
+        "value": "cố định đất ven sông",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cây thuộc khu vực độ ẩm độ ẩm trung bình",
+    "entities": [
+      {
+        "start": 30,
+        "end": 40,
+        "value": "trung bình",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 30,
+        "end": 40,
+        "confidence_entity": 0.5256935358047485,
+        "value": "trung bình",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

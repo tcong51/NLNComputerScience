@@ -58,7 +58,7 @@ function signup(){
 </script>
 <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="css/responsive.css">
 <style>
 .dropbtn {
   background-color: 		#87cefa;
@@ -77,8 +77,7 @@ function signup(){
   display: none;
   position: absolute;
   background-color: 	#b0c4de;
-/*min-width : tùy thuộc vào bao nhiêu loại cây, chưa fix hoàn chỉnh. */
-  min-width: 462px  ;
+  min-width:  max-content ;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   
@@ -105,31 +104,11 @@ function signup(){
 </style> 
 <body>
 <!-- CHATBOT TƯ VẤN -->
-<script>!(function () {
-  let e = document.createElement("script"),
-    t = document.head || document.getElementsByTagName("head")[0];
-  (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
-    (e.async = !0),
-    (e.onload = () => {
-      window.WebChat.default(
-        {
-          customData: { language: "en" },
-         
-          // add other props here
-          socketUrl: "http://localhost:5005",
-        },
-        null
-      );
-    }),
-    t.insertBefore(e, t.firstChild);
-})();
-</script>
-<!-- -------------- -->
     <div id="wrapper" >
         <div id="header"></div>
         <div id="menu">
             <div class="topnav">
+                
             <a class="active" href="index.php">Trang chủ</a>
             <ul id = "drnav">
             <!-- DropList of Species -->
@@ -341,11 +320,10 @@ function signup(){
                 }
               
                 foreach($Luottruycap_dxx as $value){
-                    // echo $value;
+
                     $sql = $con->query("SELECT Code FROM db_trees WHERE NumberAccess='$value'");
                     $sql = $sql->fetch_assoc();
-                    $tree1= $sql['Code'];
-                    // echo $tree1;
+                    $tree1= $sql['Code']; 
                     $sqlx = $con->query("SELECT * FROM db_trees WHERE Code='$tree1'");
                     $sqlx = $sqlx->fetch_assoc();
                     
@@ -371,14 +349,12 @@ function signup(){
   let e = document.createElement("script"),
     t = document.head || document.getElementsByTagName("head")[0];
   (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+    "./js/index.js"),
     (e.async = !0),
     (e.onload = () => {
       window.WebChat.default(
         {
           customData: { language: "en" },
-          // socketUrl: "https://bf-botfront.development.agents.botfront.cloud",
-          // add other props here
           socketUrl: "http://localhost:5005",
         },
         null

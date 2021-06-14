@@ -1,0 +1,681 @@
+[
+  {
+    "text": "Kỹ thuật trồng cây chuối hột là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "chuối hột",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.46953519495150237,
+        "value": "chuối hột",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây cam sành là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "cam sành",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.47187582403441175,
+        "value": "cam sành",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây chanh leo là cây gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "chanh leo",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.4654089332400428,
+        "value": "chanh leo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng dùng để che mát",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "che mát",
+        "entity": "benefit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.529161796093864,
+        "value": "che mát",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng cần độ ẩm trung bình",
+    "entities": [
+      {
+        "start": 24,
+        "end": 34,
+        "value": "trung bình",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.9877441664735257,
+        "value": "trung bình",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây thuộc khu vực độ ẩm độ ẩm trung bình",
+    "entities": [
+      {
+        "start": 30,
+        "end": 40,
+        "value": "trung bình",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 30,
+        "end": 40,
+        "confidence_entity": 0.986433201704543,
+        "value": "trung bình",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại kiểng",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "kiểng",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9889293255671071,
+        "value": "kiểng",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây Sala là gì?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "cây Sala",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.5792267759212144,
+        "value": "Sala",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây lan hoàng dương là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 34,
+        "value": "lan hoàng dương",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 34,
+        "confidence_entity": 0.4369221761299465,
+        "value": "lan hoàng dương",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây chuối hột là cây gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "chuối hột",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.42517802869794064,
+        "value": "chuối hột",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây thuộc khu vực độ ẩm cao",
+    "entities": [
+      {
+        "start": 24,
+        "end": 27,
+        "value": "cao",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9416022605734992,
+        "value": "cao",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại thân gỗ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "thân gỗ",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9922118406807721,
+        "value": "thân gỗ",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây bưởi năm roi là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 31,
+        "value": "bưởi năm roi",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nametree",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.3947627143336227,
+        "value": "năm roi",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây bưởi năm roi là cây gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "bưởi năm roi",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nametree",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.42521536031330665,
+        "value": "năm roi",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây phát tài là cây gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Cây phát tài",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nametree",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8709160988872617,
+        "value": "Cây phát tài",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng cần độ ẩm thấp",
+    "entities": [
+      {
+        "start": 24,
+        "end": 28,
+        "value": "thấp",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.9421985270109028,
+        "value": "thấp",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại thảo dược",
+    "entities": [
+      {
+        "start": 21,
+        "end": 30,
+        "value": "thảo dược",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.9908742275525172,
+        "value": "thảo dược",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây phát tài là gì?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 27,
+        "value": "cây phát tài",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.5020449643558652,
+        "value": "phát tài",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây Sala là cây gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Cây Sala",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nametree",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9107544533510794,
+        "value": "Cây Sala",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây cam sành là cây gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "cam sành",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 4,
+        "end": 12,
+        "confidence_entity": 0.3904914142443095,
+        "value": "cam sành",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng dùng để cố định đất ven sông",
+    "entities": [
+      {
+        "start": 22,
+        "end": 42,
+        "value": "cố định đất ven sông",
+        "entity": "benefit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 22,
+        "end": 42,
+        "confidence_entity": 0.6724342169766935,
+        "value": "cố định đất ven sông",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây thuộc khu vực độ ẩm thấp",
+    "entities": [
+      {
+        "start": 24,
+        "end": 28,
+        "value": "thấp",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.932394325951669,
+        "value": "thấp",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các loại cây trồng trên đất phù sa",
+    "entities": [
+      {
+        "start": 24,
+        "end": 34,
+        "value": "đất phù sa",
+        "entity": "landtype"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.5901801229005575,
+        "value": "đất phù sa",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại ăn quả",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "ăn quả",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9915271238669694,
+        "value": "ăn quả",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kỹ thuật trồng cây chanh leo là gì?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "chanh leo",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.38521321057584973,
+        "value": "chanh leo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây lan hoàng dương là cây gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 19,
+        "value": "lan hoàng dương",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 4,
+        "end": 19,
+        "confidence_entity": 0.46821493906596173,
+        "value": "lan hoàng dương",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng dùng để cải tạo đất",
+    "entities": [
+      {
+        "start": 22,
+        "end": 33,
+        "value": "cải tạo đất",
+        "entity": "benefit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.48669899283831003,
+        "value": "cải tạo đất",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các cây trồng cần độ ẩm cao",
+    "entities": [
+      {
+        "start": 24,
+        "end": 27,
+        "value": "cao",
+        "entity": "humidity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9367380950741874,
+        "value": "cao",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây trồng thuộc loại dây leo",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "dây leo",
+        "entity": "species"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "conditionsecond",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9911529024258435,
+        "value": "dây leo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây Sala là loại cây trồng gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Cây Sala",
+        "entity": "nametree"
+      },
+      {
+        "start": 12,
+        "end": 26,
+        "value": "loại cây trồng",
+        "entity": "typetree"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5665674698298426,
+        "value": "Cây Sala",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "typetree",
+        "start": 12,
+        "end": 26,
+        "confidence_entity": 0.9538226188801692,
+        "value": "loại cây trồng",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cây phát tài là loại cây trồng gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Cây phát tài",
+        "entity": "nametree"
+      },
+      {
+        "start": 16,
+        "end": 30,
+        "value": "loại cây trồng",
+        "entity": "typetree"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.546346475750663,
+        "value": "Cây phát tài",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "typetree",
+        "start": 16,
+        "end": 30,
+        "confidence_entity": 0.953839380178487,
+        "value": "loại cây trồng",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

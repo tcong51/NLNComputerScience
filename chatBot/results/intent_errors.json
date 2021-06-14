@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Cây trồng thuộc loại ăn quả",
+    "intent": "ask_species",
+    "intent_prediction": {
+      "name": "ask_condition",
+      "confidence": 0.7085201144218445
+    }
+  }
+]

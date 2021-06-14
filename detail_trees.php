@@ -13,30 +13,6 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
        <script>
-	// var IMAGE_PATHS = [];
-	// IMAGE_PATHS[0] = "./hinhanh/banner.jpg";
-	// IMAGE_PATHS[1] = "./hinhanh/banner2.jpg";
-	// IMAGE_PATHS[2] = "./hinhanh/banner3.png";
-	
-	
-	
-	// let index = 0;
-	// let intervalTimer;
-	
-	// function slideShow(){
-	// 	index++;
-	// 	if(index > IMAGE_PATHS.length - 1) index = 0;
-		
-	// 	let Img = document.getElementById("Img");
-	// 	Img.setAttribute("src", IMAGE_PATHS[index]);
-		
-	// }
-	
-	// function activateTimer(){
-	// 	intervalTimer = setInterval(slideShow, 3000);
-	// }
-	
-	// activateTimer();
 	
     const showResult=(value)=>{
    // document.getElementById("keyup").innerHTML = value;
@@ -102,8 +78,7 @@
   display: none;
   position: absolute;
   background-color: 	#b0c4de;
-/* min-width : tùy thuộc vào bao nhiêu loại cây, chưa fix hoàn chỉnh. */
-  min-width: 462px ;
+  min-width: max-content ;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -350,13 +325,6 @@ $data = $data->fetch_assoc();
 	echo "</table>";
     echo "</form>";
 
-
-    // $data = $con->query("SELECT * FROM db_trees WHERE Code='$Code'");
-    // $data = $data->fetch_assoc();
-    // echo "<form action= method=GET>";
-	//     echo '<table frame="border" border=4  >';
-	//     echo "</table>";
-    //     echo "</form>";
     $luot=$data['NumberAccess'];
     $luot=$luot+1;
     $sql = $con->query("UPDATE db_trees SET NumberAccess='$luot' WHERE Code ='$Code'");
@@ -366,5 +334,25 @@ $con->close();
 <div id="footer">
     </div>
 </div>
+<!--Chat bot -->
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "./js/index.js"),
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+<!--         -->
 </body>
 </html>

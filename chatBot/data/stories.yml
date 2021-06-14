@@ -1,0 +1,62 @@
+version: "2.0"
+stories:
+#story
+
+- story: teststory1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_name
+  - action: utter_greet_with_name
+  - intent: ask_area
+  - action: action_area
+- story: teststory2
+  steps:
+  - intent: ask_benefit
+  - action: action_benefit
+- story: teststory3
+  steps:
+  - intent: ask_climate
+  - action: action_climate
+- story: teststory4
+  steps:
+  - intent: ask_growthtime
+  - action: action_growthtime
+- story: teststory5
+  steps:
+  - intent: ask_humidity
+  - action: action_humidity
+- story: teststory6 
+  steps:
+  - intent: ask_landtype
+  - action: action_landtype
+- story: teststory7
+  steps:
+  - intent: ask_light
+  - action: action_light
+- story: teststory8
+  steps:
+  - intent: ask_species
+  - action: action_species
+- story: teststory9
+  steps:
+  - intent: ask_condition
+  - action: action_condition
+- story: teststory10
+  steps:
+  - intent: ask_name
+  - action: action_name
+- story: teststory11
+  steps:
+  - intent: ask_skill
+  - action: action_skill
+- story: teststory12
+  steps:
+  - intent: ask_name_type
+  - action: action_name_type
+- story: teststory13
+  steps:
+  - intent: space
+  - action: utter_default
+
+

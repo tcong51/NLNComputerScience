@@ -1,0 +1,106 @@
+{
+  "species": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9,
+    "confused_with": {
+      "conditionsecond": 9
+    }
+  },
+  "skill": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 17,
+    "confused_with": {
+      "name": 12,
+      "nametree": 2
+    }
+  },
+  "nametree": {
+    "precision": 0.9590909090909091,
+    "recall": 0.9768518518518519,
+    "f1-score": 0.9678899082568807,
+    "support": 216,
+    "confused_with": {
+      "name": 5
+    }
+  },
+  "conditionfirst": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 897,
+    "confused_with": {}
+  },
+  "conditionsecond": {
+    "precision": 0.9676724137931034,
+    "recall": 1.0,
+    "f1-score": 0.9835706462212486,
+    "support": 898,
+    "confused_with": {}
+  },
+  "benefit": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 20,
+    "confused_with": {
+      "conditionsecond": 10
+    }
+  },
+  "typetree": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 224,
+    "confused_with": {}
+  },
+  "name": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 17,
+    "confused_with": {
+      "skill": 9,
+      "nametree": 7
+    }
+  },
+  "landtype": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 18,
+    "confused_with": {
+      "conditionsecond": 3
+    }
+  },
+  "humidity": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8,
+    "confused_with": {
+      "conditionsecond": 8
+    }
+  },
+  "micro avg": {
+    "precision": 0.9719827586206896,
+    "recall": 0.9703098106712564,
+    "f1-score": 0.9711455641688199,
+    "support": 2324
+  },
+  "macro avg": {
+    "precision": 0.5926763322884012,
+    "recall": 0.5310185185185186,
+    "f1-score": 0.5527218130235705,
+    "support": 2324
+  },
+  "weighted avg": {
+    "precision": 0.9617613872417572,
+    "recall": 0.9703098106712564,
+    "f1-score": 0.9651495826967028,
+    "support": 2324
+  }
+}
